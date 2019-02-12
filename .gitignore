@@ -7,7 +7,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.print("Enter number:");
+  /*      System.out.print("Enter number:");
         
         Scanner input = new Scanner(System.in);
         int num1 = input.nextInt();
@@ -22,6 +22,12 @@ public class HelloWorld {
         int arr[] = {5,78,45,67,34,21};
         double avg = calculateAverage(arr);
         System.out.println("Avarage of Array:"+avg);
+   */     
+        System.out.print("Enter number:");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        FindFibonacci(n);
+        
                       
                 
     }
@@ -46,6 +52,16 @@ public class HelloWorld {
         }
 
     }
-    
+    public static void FindFibonacci(int n){
+        int j=0,total=0, n1 =0, n2=1;
+        System.out.print("0 1");
+        
+        for(j=2;j < n;j++){
+           total = n1 + n2;
+           System.out.print(total );
+           n1 = n2;
+           n2 = total;
+        }
+    }
 
 }
